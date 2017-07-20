@@ -74,7 +74,6 @@ public class Support {
 	
 	public boolean element_exists(String element){
 		try{
-			
 			driver.findElement(By.xpath(element));
 			return true;
 		}
@@ -113,6 +112,11 @@ public class Support {
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
 		WebElement element1 = driver.findElement(By.xpath(element));
 		jse.executeScript("arguments[0].scrollIntoView(true);", element1);
+	}
+	
+	public void scrollDown(){
+		JavascriptExecutor jse = (JavascriptExecutor)driver;
+		jse.executeScript("window.scrollBy(0,450)", "");
 	}
 	
 	public void scrollUntilElementExists(String element, int n){

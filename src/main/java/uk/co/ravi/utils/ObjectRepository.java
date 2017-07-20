@@ -14,8 +14,8 @@ public class ObjectRepository {
 	public final String menuSearchResult = "//div[@class='float-left']/h1[text()='Anklets']";
 	public final String catMenuJewellery = "//a[@id='catnav-primary-link-1179-link'][text()='Jewellery']";
 	public final String productAnklet = "//a[@id='catnav-l3-1180-link'][text()='Anklets']";
-	public final String productIconClothing = "//span[text()='Clothing']";
-	public final String iconSearchResult = "//div[@class='float-left']/h1[text()='Clothing']";
+	public final String productIconClothing = "$( \"span:contains('Clothing')\" )";
+	public final String iconSearchResult = "//div[@class='flag-img']";
 }
 	
 	

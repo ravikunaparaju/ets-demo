@@ -64,7 +64,7 @@ public class Search_steps {
 
 	@Then("^the results related to the product category are displayed$")
 	public void the_results_related_to_the_product_category_are_displayed() throws Throwable {
-	    Assert.assertTrue(mainPage.assertProductFromMenuSelection());
+	    Assert.assertTrue(mainPage.assertProductFromIconSelection());
 	}
 
 	

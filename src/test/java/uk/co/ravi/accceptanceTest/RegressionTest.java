@@ -8,8 +8,8 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		format = {"pretty","html:target/reports/cucumber-pretty/testreport.html"}, 
-		features = {"src/test/resources/features/"},glue="uk.co.ravi.stepdefs",tags="@wip")
+		format = {"pretty","html:target/reports/cucumber-pretty/"}, 
+		features = {"src/test/resources/features/"},glue="uk.co.ravi.stepdefs")
 public class RegressionTest {
 
 }

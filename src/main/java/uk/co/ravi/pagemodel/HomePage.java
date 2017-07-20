@@ -54,16 +54,11 @@ public class HomePage{
 	}
 	
 	public void selectProductByIcon(){
-		try{
-		support.wait_for_element_exists(obj.productIconClothing);
-		}catch(ElementNotVisibleException e){
-			support.scrollUntilElementExists(obj.productIconClothing, 10);
-		}
-		support.click(obj.productIconClothing);
+		support.clickElementByJS(obj.productIconClothing);
 	}
 	
 	public boolean assertProductFromIconSelection(){
-		if (support.element_exists(obj.menuSearchResult)){
+		if (support.element_exists(obj.iconSearchResult)){
 			return true;
 		}else{
 			return false;

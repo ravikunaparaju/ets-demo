@@ -9,7 +9,7 @@ Feature: As a user I should be able to search for a product from home screen
 	Given John is viewing the Etsy landing page
     When he clicks for a product from drop-down menu 
     Then the results for the product should be displayed
-  @wip
+  
   Scenario: Should be able to search for a product from the icons
 	Given John is viewing the Etsy landing page
     When he clicks on a product icon
