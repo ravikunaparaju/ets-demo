@@ -15,5 +15,5 @@ Feature: As a user I should be able to search for a product from home screen
     When he clicks on a product icon
     Then the results related to the product category are displayed
    
-  
+ 
 	
